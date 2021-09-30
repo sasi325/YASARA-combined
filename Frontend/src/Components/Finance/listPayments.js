@@ -15,7 +15,7 @@ const ListPayments = (props) => {
 
   const FetchItems = () => {
     axios
-      .get("http://localhost:8070/payment/", {
+      .get("http://localhost:6060/payment/", {
         headers: { ruid: Cookies.get("UID") || 0 },
       })
       .then((resp) => {

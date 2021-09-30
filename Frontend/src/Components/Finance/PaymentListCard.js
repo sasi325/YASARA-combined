@@ -8,7 +8,7 @@ const PaymentCard = (props) => {
 
   const DeleteItem = () => {
     axios
-      .delete("http://localhost:8070/payment/delete/" + props.data._id)
+      .delete("http://localhost:6060/payment/delete/" + props.data._id)
       .then(() => {
         alert("Payment Deleted");
         props.FetchItems();
@@ -75,7 +75,7 @@ const PaymentCard = (props) => {
       <div
         className={ShowImage ? "dynamic openPaySlip" : "dynamic closePaySlip"}
       >
-        <img src={"http://localhost:8070/public/" + props.data.payslip} alt="" srcset="" />
+        <img src={"http://localhost:6060/public/" + props.data.payslip} alt="" srcset="" />
       </div>
     </div>
   );

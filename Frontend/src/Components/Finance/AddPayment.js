@@ -33,7 +33,7 @@ export default function AddPayment(props) {
     console.log("Form data : ", ReqBody);
 
     axios
-      .post("http://localhost:8070/payment/add", ReqBody)
+      .post("http://localhost:6060/payment/add", ReqBody)
       .then(() => {
         alert("Payment Added");
         props.onEnd();

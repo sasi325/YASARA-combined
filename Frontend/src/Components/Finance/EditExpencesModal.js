@@ -6,7 +6,7 @@ const EditPaymentModal = (props) => {
 
   useEffect(() => {
     // axios
-    //   .get(`http://localhost:8070/payment/get/${props.match.params.id}`)
+    //   .get(`http://localhost:6060/payment/get/${props.match.params.id}`)
     //   .then((resp) => {
     //     setItemData(resp.data.payment);
     //   })
@@ -32,7 +32,7 @@ const EditPaymentModal = (props) => {
 
     axios
       .put(
-        `http://localhost:8070/expences/update/${itemData._id}`,
+        `http://localhost:6060/expences/update/${itemData._id}`,
         newPayment
       )
       .then(() => {

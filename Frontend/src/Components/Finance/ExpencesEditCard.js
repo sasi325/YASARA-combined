@@ -8,7 +8,7 @@ const ExpencesEditCard = (props) => {
 
   const DeleteItem = () => {
     axios
-      .delete("http://localhost:8070/expences/delete/" + props.data._id)
+      .delete("http://localhost:6060/expences/delete/" + props.data._id)
       .then(() => {
         alert("Expence Deleted");
         props.FetchItems();
@@ -79,7 +79,7 @@ const ExpencesEditCard = (props) => {
         className={ShowImage ? "dynamic openPaySlip" : "dynamic closePaySlip"}
       >
         <img
-          src={"http://localhost:8070/public/" + props.data.payslip}
+          src={"http://localhost:6060/public/" + props.data.payslip}
           alt=""
           srcset=""
         />

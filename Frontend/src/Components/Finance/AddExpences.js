@@ -33,7 +33,7 @@ export default function AddExpences(props) {
     console.log("Form data : ", ReqBody);
 
     axios
-      .post("http://localhost:8070/expences/add", ReqBody)
+      .post("http://localhost:6060/expences/add", ReqBody)
       .then(() => {
         alert("Expences Added");
         props.onEnd();

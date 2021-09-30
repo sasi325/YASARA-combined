@@ -1,25 +1,41 @@
 {
-  "name": "backend",
+  "name": "yasaraeducational",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Please go under edit and edit this file as needed for your project",
+  
+  "main": "server.js",
+
   "scripts": {
-    "start": "nodemon server.js",
-    "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
-  "author": "sasindu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SLIIT-FacultyOfComputing/itp_project-itp2021_s2_b05_g04.git"
+  },
+  "author": "ITP2021_S2_B05_G04",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SLIIT-FacultyOfComputing/itp_project-itp2021_s2_b05_g04/issues"
+  },
+  "homepage": "https://github.com/SLIIT-FacultyOfComputing/itp_project-itp2021_s2_b05_g04#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.27.0",
+    "concurrently": "^6.2.1",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.9",
     "multer": "^1.4.3",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "proxy":"http://localhost:6060"
+
 }

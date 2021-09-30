@@ -15,7 +15,7 @@ const ListExpences = (props) => {
 
   const FetchItems = () => {
     axios
-      .get("http://localhost:8070/expences/", {
+      .get("http://localhost:6060/expences/", {
         headers: { ruid: Cookies.get("UID") || 0 },
       })
       .then((resp) => {

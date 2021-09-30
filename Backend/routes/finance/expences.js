@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { v4: uuidv4 } = require("uuid");
 let multer = require("multer");
-const Expence = require("../models/expences");
+const Expence = require("../../models/finance/expences");
 
 const DIR = "./public/";
 

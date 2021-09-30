@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { v4: uuidv4 } = require("uuid");
 let multer = require("multer");
-const Payment = require("../models/payment");
+const Payment = require("../../models/finance/payment");
 
 const DIR = "./public/";
 

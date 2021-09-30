@@ -17,7 +17,7 @@ const EditExpences = (props) => {
 
   const FetchItems = () => {
     axios
-      .get("http://localhost:8070/expences/")
+      .get("http://localhost:6060/expences/")
       .then((resp) => {
         setPaymentsList(resp.data);
       })

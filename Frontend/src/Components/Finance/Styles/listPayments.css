@@ -1,0 +1,94 @@
+.listPaymentsContainer {
+  padding-top: 50px;
+}
+
+.listPaymentsContainer h1 {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.listPaymentsContainer .actionBar {
+  color: #ffffff;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.listPaymentsContainer .actionBar button {
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #00a8ff;
+}
+
+.listPaymentsContainer .actionBar button i {
+  margin-right: 8px;
+}
+
+.listPaymentsContainer .open_modal {
+  top: 0vh;
+  opacity: 1;
+}
+.listPaymentsContainer .close_modal {
+  top: 100vh;
+  opacity: 0;
+}
+
+.listPaymentsContainer .payment_modal_wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  background-color: #00000055;
+  padding: 25px;
+  backdrop-filter: blur(5px);
+  transition-duration: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.listPaymentsContainer .payment_modal_wrapper .closeBtn {
+  color: #ffffff;
+  background-color: #00000088;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+}
+.listPaymentsContainer .payment_modal_wrapper .closeBtn:hover {
+  color: #00a8ff;
+}
+
+.listPaymentsContainer .payment_modal_wrapper .payment_modal_container {
+  flex: 1 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listPaymentsContainer
+  .payment_modal_wrapper
+  .payment_modal_container
+  .payment_modal_content {
+  background-color: #2f3640;
+  border-radius: 10px;
+  padding: 15px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.dubmitButton{
+    background-color: #00a8ff;
+    color: #ffffff;
+    width: 250px;
+}

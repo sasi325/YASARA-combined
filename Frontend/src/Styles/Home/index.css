@@ -1,0 +1,33 @@
+.home-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-wrapper img {
+  width: 100%;
+  max-width: 550px;
+  object-fit: contain;
+}
+
+.home-wrapper h1 {
+  font-size: 75px;
+  color: #ffffff;
+  text-shadow: 5px 5px 8px #222222;
+}
+
+.home-wrapper a {
+  display: block;
+  background-color: #00a8ff;
+  box-shadow: 5px 5px 8px #222222;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}

@@ -1,0 +1,87 @@
+.paymentCard {
+    width: 100%;
+    background-color: #2f3640;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #222222;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  .paymentCard .static {
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+  }
+  
+  .paymentCard .static .details {
+    text-align: left;
+  }
+  
+  .paymentCard .static .details p .data {
+    color: #00a8ff;
+  }
+  
+  .paymentCard .static .amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .paymentCard .static .amount {
+    color: #00a8ff;
+  }
+  
+  .paymentCard .static .actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+  }
+  
+  .paymentCard:hover .static .actions {
+    opacity: 1;
+  }
+  
+  .paymentCard .static .actions button {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 8px;
+    transition-duration: 0.5s;
+  }
+  
+  .paymentCard .static .actions button:hover {
+    color: #00a8ff;
+  }
+  
+  
+  .paymentCard .dynamic{
+      width: 100%;
+      overflow: hidden;
+      transition-duration: 1s;
+  }
+  
+  .paymentCard .openPaySlip{
+      height: 400px;
+      padding: 25px;
+      opacity: 1;
+  }
+  
+  .paymentCard .closePaySlip{
+      height: 0px;
+      padding: 0px;
+      opacity: 0;
+  }
+  
+  .paymentCard .dynamic img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  

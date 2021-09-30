@@ -26,7 +26,7 @@ const Login = (props) => {
         window.location.href = "/teacher";
         break;
       case "librarian":
-        window.location.href = "/librarian";
+        window.location.href = "/library";
         break;
       case "finance":
         window.location.href = "/finance";
